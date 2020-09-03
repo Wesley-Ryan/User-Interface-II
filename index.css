@@ -1,0 +1,236 @@
+/*      CSS Reset     */
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+    border: 0;
+    box-sizing: border-box;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+    }
+    * { 
+        max-width:100%;
+        overflow-x: hidden;
+        
+    }
+    html { 
+        font-size: 62.5%;
+    }
+body {
+	background: white;
+	font-size:1.6rem;
+    line-height:1.5;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+    }
+header { 
+    margin-top: 100px;
+    margin: 0 auto;
+}
+
+#navigation { 
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    width: 100%;
+}
+#navigation p { 
+    font-size: 3.5rem;
+    font-family: 'Chelsea Market', cursive;
+    margin-left:5px;
+}
+
+#heading { 
+    display: flex;
+    justify-content: center;
+}
+
+nav { 
+    display: flex;
+    justify-content: space-around;
+    width:360px;
+    margin-top: 5px;
+    padding:1%;
+    
+}
+
+nav a { 
+    text-decoration: none;
+    border:.5px solid black;
+    height: 30px;
+    width:90px;
+    margin:0;
+    text-align: center;
+    color:black;
+    border-radius:2px;
+    box-shadow: 0px 1px 2px #000000;
+    
+}
+
+nav a:hover { 
+    background-color: black; 
+    color:white;
+    border:2px solid whitesmoke;
+    box-shadow: none;
+
+    
+}
+
+.nav-btn { 
+    border-right:none;
+}
+
+#banner-content { 
+    background: url("./resources/coffee-banner.png") no-repeat center;
+    height:500px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#banner-text { 
+    height:200px;
+    margin: 0 auto;
+    margin-top:80px;
+}
+
+h1 { 
+    font-size: 7.5rem;
+    font-family: 'Chelsea Market', cursive;
+    color:whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+   
+}
+
+#project-btn { 
+    border: 1px solid whitesmoke;
+    padding:1% 3%;
+    text-decoration:none;
+    color:white;
+    border-radius:2px;
+    box-shadow: 0px 1px 4px #000000;
+}
+
+#project-btn:hover { 
+    background-color: black; 
+    color:white;
+    border:3px solid white;
+}
+
+#main-content { 
+    display: flex;
+    justify-content: space-between;
+}
+.card { 
+    width:30%;
+    margin:20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card img:hover { 
+    box-shadow: 5px 5px 5px #A3AAAF
+}
+
+
+footer { 
+    width: 100%;
+    background-color: #DEE0E0;
+    display: flex;
+    justify-content: center;
+    padding:3%;
+    margin-top: 50px;
+    
+}
+
+footer a { 
+    text-decoration:none;
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid #000000;
+    padding:1% 3%;
+    border-radius:2px;
+    
+    
+}
+
+footer a:hover { 
+    box-shadow: 0px 1px 4px #000000;
+    background-color: #c4c7c7;
+}
+
+
+
+/*-----------MOBILE-----------*/
+
+@media (max-width: 650px){ 
+    #navigation { 
+        flex-direction: column;
+        height:100px;
+        text-align:center;
+    }
+
+    nav { 
+        width:100%;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    #banner-content { 
+        margin:0; 
+    }
+
+
+    #banner-text { 
+        height:300px;
+        margin: 0 auto;
+        margin-top:80px;
+    }
+
+    #main-content { 
+        display: flex;
+        
+        flex-direction: column;
+    }
+
+    .card { 
+        width: 90%;
+        padding:15px
+    }
+   
+    footer { 
+        width: 99%;
+        padding:4%;
+    }
+
+}
