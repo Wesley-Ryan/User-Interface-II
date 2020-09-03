@@ -30,6 +30,7 @@ body {
 	background: white;
 	font-size:1.6rem;
     line-height:1.5;
+    font-family: 'Roboto', sans-serif;
     color: black;
 	}
 ol, ul {
@@ -63,7 +64,7 @@ header {
     width: 100%;
 }
 #navigation p { 
-    font-size: 40px;
+    font-size: 3.5rem;
     font-family: 'Chelsea Market', cursive;
     margin-left:5px;
 }
@@ -72,38 +73,80 @@ nav {
     display: flex;
     justify-content: space-around;
     width:360px;
-    margin-top: 10px;
+    margin-top: 5px;
     padding:1%;
-    font-family: 'Roboto', sans-serif;
+    
 }
 
 nav a { 
     text-decoration: none;
-    border:1px solid black;
+    border:.5px solid black;
     height: 30px;
     width:90px;
     margin:0;
     text-align: center;
     color:black;
     border-radius:2px;
+    box-shadow: 0px 1px 2px #000000;
     
 }
 
 nav a:hover { 
     background-color: black; 
     color:white;
-    border:1px solid white;
+    border:2px solid whitesmoke;
+    box-shadow: none;
+
+    
 }
 
 .nav-btn { 
     border-right:none;
+}
+
+#banner-content { 
+    background: url("./resources/coffee-banner.png") no-repeat center;
+    height:500px;
+    text-align:center;
+    margin: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#banner-text { 
+    height:200px;
+    margin: 0 auto;
+    margin-top:80px;
+}
+
+h1 { 
+    font-size: 7.5rem;
+    font-family: 'Chelsea Market', cursive;
+    color:whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+   
+}
+
+#project-btn { 
+    border: 1px solid whitesmoke;
+    padding:1% 3%;
+    text-decoration:none;
+    color:white;
+    border-radius:2px;
+    box-shadow: 0px 1px 4px #000000;
+}
+
+#project-btn:hover { 
+    background-color: black; 
+    color:white;
+    border:3px solid white;
 }
 /*-----------MOBILE-----------*/
 
 @media (max-width: 650px){ 
     #navigation { 
         flex-direction: column;
-        height:120px;
+        height:100px;
         text-align:center;
     }
 
@@ -112,5 +155,18 @@ nav a:hover {
         justify-content: center;
         margin: 0 auto;
     }
+
+    #banner-content { 
+        margin:0; 
+    }
+
+
+    #banner-text { 
+        height:300px;
+        margin: 0 auto;
+        margin-top:80px;
+    }
+
+   
 
 }
