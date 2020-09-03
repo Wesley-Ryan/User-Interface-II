@@ -108,9 +108,9 @@ nav a:hover {
     background: url("./resources/coffee-banner.png") no-repeat center;
     height:500px;
     text-align:center;
-    margin: 10px 50px 10px 50px;
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 #banner-text { 
@@ -141,6 +141,22 @@ h1 {
     color:white;
     border:3px solid white;
 }
+
+#main-content { 
+    display: flex;
+    justify-content: space-between;
+}
+.card { 
+    width:30%;
+    margin:20px;
+    text-align: center;
+}
+
+
+
+
+
+
 /*-----------MOBILE-----------*/
 
 @media (max-width: 650px){ 
@@ -167,6 +183,15 @@ h1 {
         margin-top:80px;
     }
 
+    #main-content { 
+        display: flex;
+        
+        flex-direction: column;
+    }
+
+    .card { 
+        width: 100%;
+    }
    
 
 }
