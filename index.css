@@ -150,6 +150,11 @@ h1 {
     width:30%;
     margin:20px;
     text-align: center;
+    border-radius: 5px;
+}
+
+.card img:hover { 
+    box-shadow: 5px 5px 5px #A3AAAF
 }
 
 
@@ -190,7 +195,8 @@ h1 {
     }
 
     .card { 
-        width: 100%;
+        width: 90%;
+        padding:15px
     }
    
 
